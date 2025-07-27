@@ -1,0 +1,23 @@
+[project]
+name = "lookup-tool"
+version = "0.1.0"
+description = "FastAPI application for customer/stock/person lookup"
+readme = "README.md"
+authors = [
+    {name = "Bryan Bredehoeft", email = "bryan@bredehoeft.com"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "jinja2>=3.1.0",
+    "python-multipart>=0.0.6",
+    "requests>=2.32.4",
+    "python-dotenv>=1.1.1",
+    "openai>=1.97.1",
+    "sqlalchemy>=2.0.41",
+    "yfinance>=0.2.65",
+]
+
+[project.scripts]
+start = "lookup_tool.main:main"
